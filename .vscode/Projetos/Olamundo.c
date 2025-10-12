@@ -63,10 +63,7 @@ int main(){
     printf("quantos pontos turisticos tem o estado ?\n");
         scanf("%d", &pontos2);
     
-    printf("Voce completou as informacoes, segue abaixo as iformacoes das cartas\n");
-    
-    
-
+    printf("Voce completou as informacoes, segue abaixo as iformacoes das cartas\n");  
     printf("estado da carta 1: %s\n", estado1);
     printf("codigo da carta 1: %s\n", codigo1);
     printf("cidade da carta 1: %s\n", cidade1);
