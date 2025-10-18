@@ -15,7 +15,7 @@ int main(){
     float area2;
     float pib2;
     int pontos2;
-
+    
 
     printf("Aqui voce colocara informacoes sobre a carta numero 1. \n Qual o seu estado ?\n");
         scanf("%s", &estado1);
@@ -34,7 +34,6 @@ int main(){
 
     printf("qual o Pib desse estado ?\n");
         scanf("%f", &pib1);
-    
     
     printf("quantos pontos turisticos tem o estado ?\n");
         scanf("%d", &pontos2);
@@ -79,9 +78,13 @@ int main(){
     printf("tamanho da carta 2: %.2f\n", area2);
     printf("Pib da carta 2: %.2f\n", pib2);
     printf("pontos turisticos da carta 2: %d\n", pontos2);
-    
+
+        if (pib1 > pib2) {
+    printf("carta 1 venceu com o pib de %.2f\n", pib1);
+  } else {
+    printf("carta 2 venceu com o pib de %.2f\n", pib2);
+  }
     return 0;
+    }    
+    
 
-
-
-}
