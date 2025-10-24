@@ -1,6 +1,9 @@
 #include <stdio.h>
     
 int main(){
+
+    //declaracao de cada variavel
+
     char estado1[30];
     char codigo1[20];
     char cidade1[30];
@@ -20,6 +23,7 @@ int main(){
     float densidade2;
     float percapta2;
     
+    //requisicao de valor de cada variavel acima
 
     printf("Aqui voce colocara informacoes sobre a carta numero 1. \n Qual o seu estado ?\n");
         scanf("%s", &estado1);
@@ -66,12 +70,14 @@ int main(){
     printf("quantos pontos turisticos tem o estado ?\n");
         scanf("%d", &pontos2);
 
+        //calculo pre anexado
+
         densidade1=populacao1/area1;
         densidade2=populacao2/area2;
         percapta1= pib1/populacao1;
         percapta2= pib2/populacao2;
 
-
+        //entrega de informacoes sobre cada carta
 
     printf("Voce completou as informacoes, segue abaixo as iformacoes das cartas\n");  
     printf("Estado da carta 1: %s\n", estado1);
@@ -94,6 +100,7 @@ int main(){
     printf("Densidade populacional carta 1: %.2f\n", densidade2);
     printf("Pib per capta carta 2: %.2f\n", percapta2);
         
+    //por fim o calculo final da carta vencedora e mensagem elegindo o ganhador
     
     if (pib1 > pib2) {
     printf("carta 1 venceu com o pib de %.2f\n", pib1);
